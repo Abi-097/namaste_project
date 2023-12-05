@@ -31,8 +31,8 @@ import {
 import NAMASTE from "../../Images/NAMASTE_Curves-1 1.png";
 const navListMenuItems = [
   {
-    title: "About Us",
-    description: "Meet and learn about our dedication",
+    title: "Our Team",
+    // description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
   },
   // {
@@ -78,7 +78,7 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
+        <MenuItem className="flex items-center rounded-lg py-2">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
             {" "}
             {React.createElement(icon, {
@@ -92,13 +92,13 @@ function NavListMenu() {
               color="blue-gray"
               className="flex items-center text-sm font-bold"
             >
-              {title}
+              &nbsp; {title}
             </Typography>
             <Typography
               variant="paragraph"
               className="text-xs !font-medium text-blue-gray-500"
             >
-              {description}
+              {/* {description} */}
             </Typography>
           </div>
         </MenuItem>
