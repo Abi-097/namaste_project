@@ -17,59 +17,13 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  Bars4Icon,
-  GlobeAmericasIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  RectangleGroupIcon,
-  SquaresPlusIcon,
-  SunIcon,
-  TagIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/solid";
+import { UserGroupIcon } from "@heroicons/react/24/solid";
 import NAMASTE from "../../Images/NAMASTE_Curves-1 1.png";
 const navListMenuItems = [
   {
     title: "Our Team",
-    // description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
   },
-  // {
-  //   title: "Blog",
-  //   description: "Find the perfect solution for your needs.",
-  //   icon: Bars4Icon,
-  // },
-  // {
-  //   title: "Services",
-  //   description: "Learn how we can help you achieve your goals.",
-  //   icon: SunIcon,
-  // },
-  // {
-  //   title: "Support",
-  //   description: "Reach out to us for assistance or inquiries",
-  //   icon: GlobeAmericasIcon,
-  // },
-  // {
-  //   title: "Contact",
-  //   description: "Find the perfect solution for your needs.",
-  //   icon: PhoneIcon,
-  // },
-  // {
-  //   title: "News",
-  //   description: "Read insightful articles, tips, and expert opinions.",
-  //   icon: NewspaperIcon,
-  // },
-  // {
-  //   title: "Products",
-  //   description: "Find the perfect solution for your needs.",
-  //   icon: RectangleGroupIcon,
-  // },
-  // {
-  //   title: "Special Offers",
-  //   description: "Explore limited-time deals and bundles",
-  //   icon: TagIcon,
-  // },
 ];
 
 function NavListMenu() {
@@ -78,27 +32,16 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
-        <MenuItem className="flex items-center rounded-lg py-2">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
+        <MenuItem className="flex items-center rounded-lg py-1 px-1 hover:bg-transparent">
+          <div className="flex items-center justify-center">
             {React.createElement(icon, {
               strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
+              className: "h-6 text-gray-900 w-6  text-green",
             })}
           </div>
           <div>
-            <Typography
-              variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
-            >
+            <Typography variant="h6" className="text-sm text-green">
               &nbsp; {title}
-            </Typography>
-            <Typography
-              variant="paragraph"
-              className="text-xs !font-medium text-blue-gray-500"
-            >
-              {/* {description} */}
             </Typography>
           </div>
         </MenuItem>
@@ -116,11 +59,12 @@ function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium">
+          <Typography as="div" variant="h5" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 hover:bg-transparent"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              style={{ fontWeight: 600, color: "#769863" }}
             >
               About us
               <ChevronDownIcon
@@ -139,9 +83,7 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
-            {renderItems}
-          </ul>
+          <ul className="outline-none outline-0">{renderItems}</ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -157,21 +99,25 @@ function NavList() {
       <Typography
         as="a"
         href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
+        variant="h5"
+        className="font-medium text-green"
+        style={{
+          fontWeight: 600,
+        }}
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-transparent hover:text-green">
+          Home
+        </ListItem>
       </Typography>
       <NavListMenu />
       <Typography
         as="a"
         href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
+        variant="h5"
+        className="font-medium text-green"
+        style={{ fontWeight: 600 }}
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-transparent hover:text-green">
           Resources
         </ListItem>
       </Typography>
@@ -179,11 +125,11 @@ function NavList() {
       <Typography
         as="a"
         href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
+        variant="h5"
+        className="font-medium  text-green"
+        style={{ fontWeight: 600 }}
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-transparent hover:text-green">
           Events
         </ListItem>
       </Typography>
@@ -202,7 +148,7 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+    <Navbar className="static top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
