@@ -18,7 +18,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
-import NAMASTE from "../../Images/NAMASTE_Curves-1 1.png";
+import { namastheLogo } from "../../config/Images/Images";
 const navListMenuItems = [
   {
     title: "Our Team",
@@ -156,7 +156,7 @@ export function NavbarWithMegaMenu() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
-          <img src={NAMASTE} />
+          <img src={namastheLogo} alt="namastheLogo" />
         </Typography>
         <div className="hidden lg:block flex-grow">
           <NavList />
