@@ -8,6 +8,8 @@ module.exports = withMT({
         green: "#769863",
         grey: "#F8F8F8",
         black: "#212121",
+        lightblack: "#343434",
+        DBlack: "#413F3E",
       },
     },
   },

@@ -19,7 +19,7 @@ const LINKS = [
     title: "Contact",
     items: [
       "2211 Campus Drive, Evanston, IL 60208",
-      "insight@kellogg.northwestern.edu",
+      // "insight@kellogg.northwestern.edu",
       "847-491-3300",
     ],
   },
@@ -28,7 +28,7 @@ const LINKS = [
 const Footer = () => {
   return (
     <div>
-      <footer className="relative w-full bg-grey">
+      <footer className="relative w-full bg-grey pt-8">
         <div className="mx-auto w-full max-w-7xl px-8">
           <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
             <Typography variant="h5" className="mb-6 flex items-center">
@@ -78,7 +78,7 @@ const Footer = () => {
                               : "py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                           }
                         >
-                          {item}
+                          {index === 0 ? <a href="#">{item}</a> : item}
                         </Typography>
                       </li>
                     ))

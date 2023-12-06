@@ -1,0 +1,3 @@
+.curved-paper {
+  border-radius: 0 0 50% 50%/12px 12px 0 0 !important; /* Adjust the values as needed */
+}
