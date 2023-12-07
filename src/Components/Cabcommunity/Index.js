@@ -3,13 +3,12 @@ import { card1 } from "../../config/Images/Images";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Style.css";
-
+import { Typography } from "@mui/material";
 import {
   Card,
   CardHeader,
   CardBody,
   CardFooter,
-  Typography,
   Button,
 } from "@material-tailwind/react";
 
@@ -40,31 +39,32 @@ const CabCommunity = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 3, // Number of cards to slide
+      slidesToSlide: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
-      slidesToSlide: 2, // Number of cards to slide
+      slidesToSlide: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // Number of cards to slide
+      slidesToSlide: 1,
     },
   };
 
   return (
-    <div>
+    <div style={{ marginTop: "5rem" }}>
       <Typography
         variant="h1"
-        className="mb-6 flex items-center DBlack"
-        style={{
+        // className="mb-6 flex items-center DBlack"
+        sx={{
+          mb: 6,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          fontSize: "50px",
           fontWeight: "700",
+          fontSize: { lg: "70px", sm: "70px", xs: "40px" },
         }}
       >
         CAB Community

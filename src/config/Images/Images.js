@@ -10,3 +10,11 @@ export const Carousel2 = require("../../Common/Assets/Images/Property 1=4.png");
 export const Carousel3 = require("../../Common/Assets/Images/Property 1=image 2 (1).png");
 
 export const card1 = require("../../Common/Assets/Images/Copy of About us (6) 4.png");
+
+export const community1 = require("../../Common/Assets/Images/comminuty 1.png");
+export const detection1 = require("../../Common/Assets/Images/detection 1.png");
+export const engagement1 = require("../../Common/Assets/Images/engagement 1.png");
+export const intervention1 = require("../../Common/Assets/Images/intervention 1.png");
+
+export const group1 = require("../../Common/Assets/Images/Group.png");
+export const group2 = require("../../Common/Assets/Images/Group2.png");
