@@ -18,9 +18,8 @@ const LINKS = [
   {
     title: "Contact",
     items: [
-      "2211 Campus Drive, Evanston, IL 60208",
-      // "insight@kellogg.northwestern.edu",
-      "847-491-3300",
+      "195M, 'Karlshue Court', Baseline Road, Colombo 09, Sri Lanka.",
+      "info@namasthesl.com",
     ],
   },
 ];

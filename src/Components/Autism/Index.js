@@ -64,10 +64,12 @@ const Autism = () => {
                 fontWeight: "500",
               }}
             >
-              NAMASTE is a research project that will implement and evaluate a
-              novel integrated detection and care pathway for young children
-              with autism and their families in India, Sri Lanka, and Nepal,
-              delivered by non-specialist health workers.
+              Autism – also referred to as autism spectrum disorder –
+              constitutes a diverse group of conditions related to the
+              development of the brain. Characteristics may be detected in early
+              childhood, but autism is often not diagnosed until much later.
+              <br />
+              -World Health Organization-
             </Typography>
             {!isSmallScreen && (
               <Grid container justifyContent="flex-start" alignItems="flex-end">
