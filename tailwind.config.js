@@ -11,6 +11,16 @@ module.exports = withMT({
         lightblack: "#343434",
         DBlack: "#413F3E",
       },
+      animation: {
+        fade: "fadeIn .5s ease-in-out",
+      },
+
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
     },
   },
   plugins: [],
