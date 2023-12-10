@@ -106,7 +106,7 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <div style={{ marginRight: "20%" }}>
+    <div style={{ marginRight: "17%" }}>
       <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 lg:justify-end">
         <Link to="/" style={{ textDecoration: "none" }}>
           <Typography
@@ -157,6 +157,20 @@ function NavList() {
             Events
           </ListItem>
         </Typography>
+        <Typography
+          as="a"
+          href="#"
+          variant="h5"
+          className="font-medium  text-green"
+          style={{ fontWeight: 600, marginLeft: "1rem" }}
+        >
+          <ListItem
+            className="flex items-center gap-5 py-2 pr-4 hover:bg-transparent hover:text-green"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            Contacts
+          </ListItem>
+        </Typography>
       </List>
     </div>
   );
@@ -177,9 +191,10 @@ export function NavbarWithMegaMenu() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
-          href="#"
+          href="/"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          style={{ marginLeft: "6.5rem" }}
         >
           <img src={namastheLogo} alt="namastheLogo" />
         </Typography>

@@ -25,7 +25,12 @@ const ProjectCard = () => {
               boxShadow: "2px 2px 20px 3px rgba(0, 0, 0, 0.06)",
               textAlign: "center",
               width: "22rem",
-              marginTop: "-50px",
+              marginTop: {
+                lg: "-100px",
+                md: "-50px",
+                sm: "2px",
+                xs: "2px",
+              },
               zIndex: 999,
 
               pt: 2,
@@ -81,16 +86,25 @@ const ProjectCard = () => {
               {/* <Button variant="contained" style={{ background: "transparent" }}>
                 Learn More
               </Button> */}
-              <p
+              <a
+                href="/learn-more"
                 style={{
-                  textAlign: "center",
-                  fontWeight: "600",
+                  textDecoration: "none",
                   color: "#769863",
-                  fontFamily: "Poppins, sans-serif",
+                  cursor: "pointer",
                 }}
               >
-                Learn More
-              </p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontWeight: "600",
+                    color: "#769863",
+                    fontFamily: "Poppins, sans-serif",
+                  }}
+                >
+                  Learn More
+                </p>
+              </a>
             </CardContent>
           </Card>
         </Grid>
@@ -114,7 +128,7 @@ const ProjectCard = () => {
               textAlign: "center",
               width: "22rem",
               marginTop: {
-                lg: "-50px",
+                lg: "-100px",
                 md: "-50px",
                 sm: "2px",
                 xs: "2px",

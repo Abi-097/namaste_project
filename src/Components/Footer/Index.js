@@ -45,8 +45,8 @@ const Footer = () => {
             justifyContent: "space-between",
             flexWrap: "wrap",
             gap: 2,
-            marginLeft: { lg: "14rem", md: "10rem", sm: 0, xs: 0 },
-            marginRight: { lg: "14rem", md: "10rem", sm: 0, xs: 0 },
+            marginLeft: { lg: "12rem", md: "2rem", sm: "1rem", xs: 0 },
+            marginRight: { lg: "12rem", md: "2rem", sm: "2rem", xs: 0 },
           }}
         >
           <div
@@ -78,6 +78,7 @@ const Footer = () => {
               nested
               sx={{
                 width: { xs: "50%", sm: "33%", md: 140, lg: "33%" },
+                padding: "25px",
               }}
             >
               <ListItem
@@ -154,10 +155,17 @@ const Footer = () => {
             </ListItem>
             <ListItem
               nested
-              sx={{ width: { xs: "50%", sm: "33%", md: 140, lg: "33%" } }}
+              sx={{
+                width: { xs: "50%", sm: "33%", md: 140, lg: "33%" },
+                padding: "25px",
+              }}
             >
               <ListItem
-                sx={{ color: "#000", fontSize: "24px", fontWeight: "500" }}
+                sx={{
+                  color: "#000",
+                  fontSize: "24px",
+                  fontWeight: "500",
+                }}
               >
                 Follow
               </ListItem>
@@ -184,7 +192,10 @@ const Footer = () => {
             </ListItem>
             <ListItem
               nested
-              sx={{ width: { xs: "50%", sm: "33%", md: 180, lg: "33%" } }}
+              sx={{
+                width: { xs: "50%", sm: "33%", md: 180, lg: "33%" },
+                padding: "25px",
+              }}
             >
               <ListItem
                 sx={{ color: "#000", fontSize: "24px", fontWeight: "500" }}
@@ -193,9 +204,8 @@ const Footer = () => {
               </ListItem>
               <List sx={{ "--ListItemDecorator-size": "32px" }}>
                 <ListItem>
-                  <p>
-                    195M, 'Karlshue Court', <br />
-                    Baseline Road, Colombo 09, <br />
+                  <p style={{ fontSize: "18px", fontWeight: 500 }}>
+                    195M, 'Karlshue Court', Baseline Road, Colombo 09, <br />
                     Sri Lanka.
                     <a href="mailto:info@namasthesl.com">
                       <p>info@namasthesl.com</p>

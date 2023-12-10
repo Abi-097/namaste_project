@@ -41,8 +41,8 @@ const WeDo = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          ml: { xs: "0rem" },
-          mr: { xs: "0rem" },
+          ml: { xs: "0rem", lg: "25rem", md: "5rem" },
+          mr: { xs: "0rem", lg: "25rem", md: "5rem" },
         }}
       >
         <Grid
@@ -229,6 +229,7 @@ const WeDo = () => {
         variant="h1"
         sx={{
           mb: 6,
+          mt: { lg: 20, md: 20, sm: 5, xs: 0 },
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

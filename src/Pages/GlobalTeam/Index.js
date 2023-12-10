@@ -127,48 +127,62 @@ const GlobalTeam = () => {
           }}
         >
           {data.map((members) => (
-            <Grid key={members.id} item lg={4} md={6} sm={6} xs={12}>
-              <Box>
-                <img src={members.image} alt={members.name} />
-              </Box>
-              <Box>
-                <p
-                  style={{
-                    fontWeight: "500",
-                    fontSize: "16px",
-                    color: "#474747",
-                  }}
-                >
-                  {members.name}
-                </p>
-                <p
-                  style={{
-                    fontWeight: "500",
-                    fontSize: "16px",
-                    color: "#474747",
-                  }}
-                >
-                  {members.position}
-                </p>
-                <p
-                  style={{
-                    //   fontWeight: "500",
-                    fontSize: "16px",
-                    color: "#474747",
-                  }}
-                >
-                  {members.description}
-                  <br />
-                  {members.description1}
-                  <br />
-                  {members.description2}
-                  <br />
-                </p>
-                <a href={`mailto:${members.email}`}>
-                  {" "}
-                  <img src={email} alt="email" />{" "}
-                </a>
-              </Box>
+            <Grid
+              key={members.id}
+              item
+              lg={4}
+              md={6}
+              sm={6}
+              xs={12}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItem: "center",
+              }}
+            >
+              <div>
+                <Box>
+                  <img src={members.image} alt={members.name} />
+                </Box>
+                <Box>
+                  <p
+                    style={{
+                      fontWeight: "500",
+                      fontSize: "16px",
+                      color: "#474747",
+                    }}
+                  >
+                    {members.name}
+                  </p>
+                  <p
+                    style={{
+                      fontWeight: "500",
+                      fontSize: "16px",
+                      color: "#474747",
+                    }}
+                  >
+                    {members.position}
+                  </p>
+                  <p
+                    style={{
+                      //   fontWeight: "500",
+                      fontSize: "16px",
+                      color: "#474747",
+                    }}
+                  >
+                    {members.description}
+                    <br />
+                    {members.description1}
+                    <br />
+                    {members.description2}
+                    <br />
+                  </p>
+                  <a href={`mailto:${members.email}`}>
+                    {" "}
+                    <img src={email} alt="email" />{" "}
+                  </a>
+                </Box>
+              </div>
             </Grid>
           ))}
         </Grid>
