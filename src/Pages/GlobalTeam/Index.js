@@ -11,8 +11,9 @@ const data = [
     image: aboutus,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of ",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
   {
@@ -20,8 +21,9 @@ const data = [
     image: aboutus1,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of ",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
   {
@@ -29,8 +31,9 @@ const data = [
     image: aboutus2,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of ",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
   {
@@ -38,8 +41,9 @@ const data = [
     image: aboutus,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of ",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
   {
@@ -47,8 +51,9 @@ const data = [
     image: aboutus1,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of ",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
   {
@@ -56,8 +61,9 @@ const data = [
     image: aboutus2,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of ",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
   {
@@ -65,8 +71,9 @@ const data = [
     image: aboutus,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of ",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
   {
@@ -74,8 +81,9 @@ const data = [
     image: aboutus1,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
   {
@@ -83,8 +91,9 @@ const data = [
     image: aboutus2,
     name: "Pat Heffernan",
     position: "President",
-    description:
-      "Pat — marketing strategist, writer, and founder of Marketing Partners — serves as creative change director for our client team.",
+    description: "Pat — marketing strategist, writer, and founder of ",
+    description1: "Marketing Partners — serves as creative change ",
+    description2: "director for our client team. ",
     email: "aaa@gmail.com",
   },
 ];
@@ -117,10 +126,10 @@ const GlobalTeam = () => {
             p: 5,
           }}
         >
-          {data.map((member) => (
-            <Grid key={member.id} item lg={4} md={6} sm={6} xs={12}>
+          {data.map((members) => (
+            <Grid key={members.id} item lg={4} md={6} sm={6} xs={12}>
               <Box>
-                <img src={member.image} alt={member.name} />
+                <img src={members.image} alt={members.name} />
               </Box>
               <Box>
                 <p
@@ -130,7 +139,7 @@ const GlobalTeam = () => {
                     color: "#474747",
                   }}
                 >
-                  {member.name}
+                  {members.name}
                 </p>
                 <p
                   style={{
@@ -139,7 +148,7 @@ const GlobalTeam = () => {
                     color: "#474747",
                   }}
                 >
-                  {member.position}
+                  {members.position}
                 </p>
                 <p
                   style={{
@@ -148,9 +157,14 @@ const GlobalTeam = () => {
                     color: "#474747",
                   }}
                 >
-                  {member.description}
+                  {members.description}
+                  <br />
+                  {members.description1}
+                  <br />
+                  {members.description2}
+                  <br />
                 </p>
-                <a href={`mailto:${member.email}`}>
+                <a href={`mailto:${members.email}`}>
                   {" "}
                   <img src={email} alt="email" />{" "}
                 </a>

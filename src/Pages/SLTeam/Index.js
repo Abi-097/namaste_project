@@ -12,8 +12,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -22,8 +22,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -32,8 +32,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -42,8 +42,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -52,8 +52,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -62,8 +62,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -72,8 +72,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -82,8 +82,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -92,8 +92,8 @@ const data = [
     name: "Pat Heffernan",
     position: "President",
     description: "Pat — marketing strategist, writer, and founder of",
-    description2:
-      "Marketing Partners — serves as creative change director for our client team.",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
 ];
@@ -178,6 +178,8 @@ const SLTeam = () => {
                   >
                     {member.description} <br />
                     {member.description2}
+                    <br />
+                    {member.description3}
                   </p>
                   <a href={`mailto:${member.email}`}>
                     {" "}
