@@ -53,6 +53,7 @@ const ProjectCard = () => {
                   fontWeight: "600",
                   lineHeight: "18px",
                   paddingBottom: "20px",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Project Background
@@ -67,6 +68,7 @@ const ProjectCard = () => {
                   color: "#413F3E",
                   fontSize: "12px",
                   fontWeight: "600",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Most children with neurodevelopmental disabilities living in
@@ -84,6 +86,7 @@ const ProjectCard = () => {
                   textAlign: "center",
                   fontWeight: "600",
                   color: "#769863",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Learn More
@@ -142,6 +145,7 @@ const ProjectCard = () => {
                   fontWeight: "600",
                   lineHeight: "18px",
                   paddingBottom: "20px",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Project Objectives
@@ -156,6 +160,7 @@ const ProjectCard = () => {
                   color: "#413F3E",
                   fontSize: "12px",
                   fontWeight: "600",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Most children with neurodevelopmental disabilities living in
@@ -170,6 +175,7 @@ const ProjectCard = () => {
                   textAlign: "center",
                   fontWeight: "600",
                   color: "#769863",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Learn More

@@ -84,12 +84,28 @@ export function CarouselTransition() {
                 style={imageStyle}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-start p-6">
-                <span style={{ ...spanStyle, textAlign: "left" }}>
-                  <h2 style={{ ...headingStyle, textAlign: "left" }}>
+                <span
+                  style={{
+                    ...spanStyle,
+                    textAlign: "left",
+                    fontFamily: "Poppins, sans-serif",
+                  }}
+                >
+                  <h2
+                    style={{
+                      ...headingStyle,
+                      textAlign: "left",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
+                  >
                     {slideImage.content.heading}
                   </h2>
                   <p
-                    style={{ ...paraStyle, textAlign: "left" }}
+                    style={{
+                      ...paraStyle,
+                      textAlign: "left",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
                     dangerouslySetInnerHTML={{
                       __html: slideImage.content.paragraph,
                     }}
