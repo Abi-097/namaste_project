@@ -19,6 +19,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
 import { namastheLogo } from "../../config/Images/Images";
+import { Link } from "react-router-dom";
 const navListMenuItems = [
   {
     title: "Our Team",
@@ -32,19 +33,25 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
-        <MenuItem className="flex items-center rounded-lg py-1 px-1 hover:bg-transparent">
-          <div className="flex items-center justify-center">
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6  text-green",
-            })}
-          </div>
-          <div>
-            <Typography variant="h6" className="text-sm text-green">
-              &nbsp; {title}
-            </Typography>
-          </div>
-        </MenuItem>
+        <Link to="/team" style={{ textDecoration: "none" }}>
+          <MenuItem className="flex items-center rounded-lg py-1 px-1 hover:bg-transparent">
+            <div className="flex items-center justify-center">
+              {React.createElement(icon, {
+                strokeWidth: 2,
+                className: "h-6 text-gray-900 w-6  text-green",
+              })}
+            </div>
+            <div>
+              <Typography
+                variant="h6"
+                className="text-sm text-green"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                &nbsp; {title}
+              </Typography>
+            </div>
+          </MenuItem>
+        </Link>
       </a>
     )
   );
@@ -64,7 +71,11 @@ function NavListMenu() {
               className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 hover:bg-transparent"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
-              style={{ fontWeight: 600, color: "#769863" }}
+              style={{
+                fontWeight: 600,
+                color: "#769863",
+                fontFamily: "Poppins, sans-serif",
+              }}
             >
               About us
               <ChevronDownIcon
@@ -95,45 +106,59 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 lg:justify-end">
-      <Typography
-        as="a"
-        href="#"
-        variant="h5"
-        className="font-medium text-green"
-        style={{
-          fontWeight: 600,
-        }}
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-transparent hover:text-green">
-          Home
-        </ListItem>
-      </Typography>
-      <NavListMenu />
-      <Typography
-        as="a"
-        href="#"
-        variant="h5"
-        className="font-medium text-green"
-        style={{ fontWeight: 600 }}
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-transparent hover:text-green">
-          Resources
-        </ListItem>
-      </Typography>
+    <div style={{ marginRight: "20%" }}>
+      <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 lg:justify-end">
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <Typography
+            as="a"
+            href="#"
+            variant="h5"
+            className="font-medium text-green"
+            style={{
+              fontWeight: 600,
+              marginRight: "1rem",
+            }}
+          >
+            <ListItem
+              className="flex items-center py-2 pr-4 hover:bg-transparent hover:text-green"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              Home
+            </ListItem>
+          </Typography>
+        </Link>
+        <NavListMenu />
+        <Typography
+          as="a"
+          href="#"
+          variant="h5"
+          className="font-medium text-green"
+          style={{ fontWeight: 600, marginLeft: "1rem" }}
+        >
+          <ListItem
+            className="flex items-center gap-5 py-2 pr-4 hover:bg-transparent hover:text-green"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            Resources
+          </ListItem>
+        </Typography>
 
-      <Typography
-        as="a"
-        href="#"
-        variant="h5"
-        className="font-medium  text-green"
-        style={{ fontWeight: 600 }}
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-transparent hover:text-green">
-          Events
-        </ListItem>
-      </Typography>
-    </List>
+        <Typography
+          as="a"
+          href="#"
+          variant="h5"
+          className="font-medium  text-green"
+          style={{ fontWeight: 600, marginLeft: "1rem" }}
+        >
+          <ListItem
+            className="flex items-center gap-5 py-2 pr-4 hover:bg-transparent hover:text-green"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            Events
+          </ListItem>
+        </Typography>
+      </List>
+    </div>
   );
 }
 

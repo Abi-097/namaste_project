@@ -49,7 +49,12 @@ const Autism = () => {
               alignItems="center"
               variant="h4"
               gutterBottom
-              style={{ fontSize: "36px", fontWeight: "600" }}
+              style={{
+                fontSize: "36px",
+                fontWeight: "600",
+                color: "rgba(65, 63, 62, 1)",
+                fontFamily: "Poppins, sans-serif",
+              }}
             >
               What is Autism
             </Typography>
@@ -62,6 +67,18 @@ const Autism = () => {
                 fontSize: "30px",
                 fontStyle: "italic",
                 fontWeight: "500",
+                color: "#040404",
+                fontFamily: "Poppins, sans-serif",
+              }}
+              sx={{
+                ml: {
+                  lg: "4rem",
+                  md: "3rem",
+                },
+                mr: {
+                  lg: "4rem",
+                  md: "3rem",
+                },
               }}
             >
               Autism – also referred to as autism spectrum disorder –

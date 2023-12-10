@@ -1,0 +1,26 @@
+.cylinder-background {
+  /* position: relative; */
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(232, 205, 237, 0.5) 100%
+  );
+  height: 35rem;
+}
+
+.cylinder-background::before {
+  content: "";
+  /* position: absolute; */
+  top: -100%;
+  left: 50%;
+  width: 200%;
+  height: 200%; /* This will create the cylinder shape */
+  background-color: #fff; /* Adjust background color as needed */
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.imageContainer:hover {
+  border-color: purple !important;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const NeedToJoin = () => {
   const [isHovered, setIsHovered] = useState(false);
   const hoverStyles = {
@@ -13,13 +13,15 @@ const NeedToJoin = () => {
   return (
     <div style={{ marginTop: "10rem", marginBottom: "10rem" }}>
       <h4 className="text-gray-800 text-center text-5xl font-bold">
-        <span
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          style={hoverStyles}
-        >
-          Need to join ?
-        </span>
+        <Link to="/join">
+          <span
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={hoverStyles}
+          >
+            Need to join ?
+          </span>
+        </Link>
       </h4>
     </div>
   );

@@ -31,15 +31,32 @@ const cardData = [
     authors: "Val Racheeva + Maxi Knust",
     location: "Co-authors, Germany",
   },
+  {
+    image: card1,
+    text: "where entrepreneurs can easily find the right design for their company. The book cover for us was a very important part of the success of the book. Therefore, we entrusted this to experts and ended up being very happy with the result.",
+    authors: "Val Racheeva + Maxi Knust",
+    location: "Co-authors, Germany",
+  },
+  {
+    image: card1,
+    text: "where entrepreneurs can easily find the right design for their company. The book cover for us was a very important part of the success of the book. Therefore, we entrusted this to experts and ended up being very happy with the result.",
+    authors: "Val Racheeva + Maxi Knust",
+    location: "Co-authors, Germany",
+  },
+  {
+    image: card1,
+    text: "where entrepreneurs can easily find the right design for their company. The book cover for us was a very important part of the success of the book. Therefore, we entrusted this to experts and ended up being very happy with the result.",
+    authors: "Val Racheeva + Maxi Knust",
+    location: "Co-authors, Germany",
+  },
 ];
 
 const CabCommunity = () => {
   const responsive = {
-    // Define your responsive settings here
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 3,
+      slidesToSlide: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -54,51 +71,42 @@ const CabCommunity = () => {
   };
 
   return (
-    <div style={{ marginTop: "5rem" }}>
-      <Typography
-        variant="h1"
-        // className="mb-6 flex items-center DBlack"
-        sx={{
-          mb: 6,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontWeight: "700",
-          fontSize: { lg: "70px", sm: "70px", xs: "40px" },
-        }}
-      >
-        CAB Community
-      </Typography>
+    <Paper
+      elevation={0}
+      sx={{
+        maxWidth: "200rem",
+        ml: { lg: "6rem", md: "2rem", sm: 0, xs: 0 },
+        mr: { lg: "6rem", md: "2rem", sm: 0, xs: 0 },
+        p: 2,
+      }}
+      style={{ marginTop: "10%" }}
+    >
       <Carousel
-        //   centerMode={true}
         responsive={responsive}
         autoPlay={true}
-        autoPlaySpeed={3000}
-        //   transitionDuration={100}
+        autoPlaySpeed={5000}
         infinite={true}
-        //   customTransition={customTransition}
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         containerClass="carousel-container"
-        //   itemClass="carousel-item-padding-40-px"
       >
         {cardData.map((data, index) => (
           <Card
-            className="mt-6 w-96 text-lightblack"
+            className="mt-6 w-96 text-lightblack shadow-md"
             key={index}
             style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              // Centering cards only for desktop view
-              margin: "0 auto", // Centering horizontally
-              maxWidth: "100%", // Adjust this value based on your design
+              maxWidth: "100%",
             }}
           >
             <div style={{ display: "flex", justifyContent: "center" }}>
               <img src={data.image} alt={`card${index + 1}`} width="174" />
             </div>
             <CardBody style={{ textAlign: "center" }}>
-              <Typography sx={{ fontSize: 16, fontWeight: 500 }}>
+              <Typography
+                sx={{ fontSize: 16, fontWeight: 500, color: "#343434" }}
+              >
                 {data.text}
               </Typography>
             </CardBody>
@@ -108,7 +116,8 @@ const CabCommunity = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  fontSize: 16,
+                  fontSize: "16px",
+                  fontStyle: "italic",
                   fontWeight: 500,
                 }}
               >
@@ -118,7 +127,7 @@ const CabCommunity = () => {
           </Card>
         ))}
       </Carousel>
-    </div>
+    </Paper>
   );
 };
 

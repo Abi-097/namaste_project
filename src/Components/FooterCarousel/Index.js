@@ -64,14 +64,17 @@ const FooterCarousel = () => {
   };
 
   return (
-    <div style={{ marginTop: "5rem", backgroundColor: "#769863" }}>
+    <div
+      style={{ marginTop: "5rem", backgroundColor: "rgba(118, 152, 99, 0.3)" }}
+    >
       <Carousel
         responsive={responsive}
         autoPlay={true}
-        autoPlaySpeed={2000}
+        autoPlaySpeed={4000}
         infinite={true}
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         containerClass="carousel-container"
+        customTransition="transform 500ms ease-in"
       >
         {cardData.map((data, index) => (
           <div
@@ -81,9 +84,15 @@ const FooterCarousel = () => {
               justifyContent: "center",
               alignItems: "center",
               height: "190px",
+              transition: "transform 500ms ease-in",
             }}
           >
-            <img src={data.image} alt={`card${index + 1}`} />
+            <img
+              src={data.image}
+              alt={`card${index + 1}`}
+              width="275px"
+              height="200px"
+            />
           </div>
         ))}
       </Carousel>

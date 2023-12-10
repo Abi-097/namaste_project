@@ -28,3 +28,14 @@ export const Rectangle4 = require("../../Common/Assets/Images/Rectangle-removebg
 // export const group2 = require("../../Common/Assets/Images/Group2.png");
 
 export const projectcard1 = require("../../Common/Assets/Images/Clip path group.png");
+export const gif = require("../../Common/Assets/Images/unity-come-together.gif");
+
+export const aboutus = require("../../Common/Assets/Images/Copy of About us (17) 1.png");
+export const aboutus1 = require("../../Common/Assets/Images/Copy of About us (17) 2.png");
+export const aboutus2 = require("../../Common/Assets/Images/Copy of About us (17) 6.png");
+export const email = require("../../Common/Assets/Images/email.png");
+
+export const projectcard2 = require("../../Common/Assets/Images/card.png");
+export const Team1 = require("../../Common/Assets/Images/team1.png");
+export const Team2 = require("../../Common/Assets/Images/team2.png");
+export const underconstruction = require("../../Common/Assets/Images/under-construction-2891888_1280.jpg");

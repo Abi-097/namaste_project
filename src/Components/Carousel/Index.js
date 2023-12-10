@@ -4,6 +4,7 @@ import "react-slideshow-image/dist/styles.css";
 import "./Style.css";
 import Box from "@mui/material/Box";
 import { Carousel1, Carousel2, Carousel3 } from "../../config/Images/Images";
+import ProjectCard from "../Card/Index";
 
 const spanStyle = {
   padding: "20px",
@@ -30,7 +31,7 @@ const paraStyle = {
 };
 
 const imageStyle = {
-  height: "150vh", // Set image height to 150% viewport height
+  height: "100vh", // Set image height to 150% viewport height
   width: "100%", // Ensure image takes up full width
   objectFit: "cover", // Maintain image aspect ratio and cover container
 };
@@ -65,7 +66,7 @@ const slideImages = [
 export function CarouselTransition() {
   return (
     <Box>
-      <Fade>
+      <Fade infinite={true} duration={4000} transitionDuration={1000}>
         {slideImages.map((slideImage, index) => (
           <div key={index} className="slide-item">
             <div
@@ -99,6 +100,7 @@ export function CarouselTransition() {
           </div>
         ))}
       </Fade>
+      <ProjectCard />
     </Box>
   );
 }
