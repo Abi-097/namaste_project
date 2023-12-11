@@ -31,8 +31,8 @@ const Footer = () => {
     <div>
       <Sheet
         sx={{
-          flexGrow: 1,
-          p: 2,
+          flexGrow: 4,
+          // p: 2,
           borderRadius: { xs: 0, sm: "sm" },
           bgcolor: "#F8F8F8",
         }}
@@ -44,9 +44,9 @@ const Footer = () => {
             alignItems: { md: "center" },
             justifyContent: "space-between",
             flexWrap: "wrap",
-            gap: 2,
-            marginLeft: { lg: "12rem", md: "2rem", sm: "1rem", xs: 0 },
-            marginRight: { lg: "12rem", md: "2rem", sm: "2rem", xs: 0 },
+
+            marginLeft: { lg: "7rem", md: "2rem", sm: "1rem", xs: 0 },
+            marginRight: { lg: "4rem", md: "2rem", sm: "2rem", xs: 0 },
           }}
         >
           <div
@@ -54,7 +54,6 @@ const Footer = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              // paddingLeft: "1rem",
             }}
           >
             <img
@@ -72,13 +71,15 @@ const Footer = () => {
               flexGrow: 0,
               "--ListItem-radius": "8px",
               "--ListItem-gap": "0px",
+              display: "flex",
+              justifyContent: "center",
             }}
           >
             <ListItem
               nested
               sx={{
-                width: { xs: "50%", sm: "33%", md: 140, lg: "33%" },
-                padding: "25px",
+                width: { xs: "50%", sm: "33%", md: 140, lg: 170 },
+                paddingTop: "20px",
               }}
             >
               <ListItem
@@ -156,8 +157,8 @@ const Footer = () => {
             <ListItem
               nested
               sx={{
-                width: { xs: "50%", sm: "33%", md: 140, lg: "33%" },
-                padding: "25px",
+                width: { xs: "50%", sm: "33%", md: 140, lg: 170 },
+                paddingTop: "20px",
               }}
             >
               <ListItem
@@ -193,8 +194,8 @@ const Footer = () => {
             <ListItem
               nested
               sx={{
-                width: { xs: "50%", sm: "33%", md: 180, lg: "33%" },
-                padding: "25px",
+                width: { xs: "50%", sm: "33%", md: 180, lg: 250 },
+                paddingTop: "20px",
               }}
             >
               <ListItem
@@ -202,10 +203,16 @@ const Footer = () => {
               >
                 Contact
               </ListItem>
-              <List sx={{ "--ListItemDecorator-size": "32px" }}>
+              <List
+                sx={{
+                  "--ListItemDecorator-size": "32px",
+                  mr: { xs: "0", sm: "33%", md: "-5%", lg: "-5%" },
+                }}
+              >
                 <ListItem>
                   <p style={{ fontSize: "18px", fontWeight: 500 }}>
-                    195M, 'Karlshue Court', Baseline Road, Colombo 09, <br />
+                    195M, 'Karlshue Court', <br />
+                    Baseline Road, Colombo 09, <br />
                     Sri Lanka.
                     <a href="mailto:info@namasthesl.com">
                       <p>info@namasthesl.com</p>

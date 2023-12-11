@@ -37,42 +37,25 @@ const WeDo = () => {
         What we do
       </Typography>
       <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          ml: { xs: "0rem", lg: "25rem", md: "5rem" },
-          mr: { xs: "0rem", lg: "25rem", md: "5rem" },
-        }}
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
       >
         <Grid
           container
-          justifyContent="center"
-          alignItems="center"
-          spacing={0}
-          sx={{
-            padding: "20px",
-            maxWidth: "100%",
+          spacing={2}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Paper
-              elevation={0}
-              style={{
-                height: "100%",
-                textAlign: "center",
-                padding: "15px",
-                display: "flex",
-                background: "transparent",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+          <Grid item lg={5} md={6} sm={12} xs={12}>
+            <div style={{ display: "flex", justifyContent: "flex-start" }}>
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  height: "140px",
                 }}
               >
                 <img
@@ -82,124 +65,33 @@ const WeDo = () => {
                   style={{
                     border: "3px solid #769863",
                     borderRadius: "15px",
-                    height: "100%",
-                    width: "auto",
+                    height: "100px",
+                    width: "100px",
                   }}
                 />{" "}
-                &nbsp;&nbsp;
                 <p
                   style={{
                     fontSize: "24px",
                     fontWeight: "300",
                     fontFamily: "Poppins, sans-serif",
+                    // width: "20%",
+                    // margin: "0",
+                    textAlign: "center",
                   }}
                 >
-                  {" "}
-                  &nbsp; &nbsp; {images.image1.text}
+                  &nbsp; {images.image1.text}
                 </p>
               </div>
-            </Paper>
+            </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Paper
-              elevation={0}
-              style={{
-                height: "100%",
-                textAlign: "center",
-                padding: "15px",
-                display: "flex",
-                background: "transparent",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+          <Grid item lg={5} md={6} sm={12} xs={12}>
+            <div style={{ display: "flex", justifyContent: "flex-start" }}>
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                }}
-              >
-                <img
-                  src={images.image2.image}
-                  alt={images.image2.text}
-                  className="imageContainer"
-                  style={{
-                    border: "3px solid #769863",
-                    borderRadius: "15px",
-                  }}
-                />
-                <p
-                  style={{
-                    fontSize: "24px",
-                    fontWeight: "300",
-                    fontFamily: "Poppins, sans-serif",
-                  }}
-                >
-                  &nbsp; {images.image2.text}
-                </p>
-              </div>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Paper
-              elevation={0}
-              style={{
-                height: "100%",
-                textAlign: "center",
-                padding: "15px",
-                display: "flex",
-                background: "transparent",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={images.image3.image}
-                  alt={images.image3.text}
-                  className="imageContainer"
-                  style={{
-                    border: "3px solid #769863",
-                    borderRadius: "15px",
-                  }}
-                />
-                <p
-                  style={{
-                    fontSize: "24px",
-                    fontWeight: "300",
-                    fontFamily: "Poppins, sans-serif",
-                  }}
-                >
-                  &nbsp;{images.image3.text}
-                </p>
-              </div>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <Paper
-              elevation={0}
-              style={{
-                height: "100%",
-                textAlign: "center",
-                padding: "20px",
-                display: "flex",
-                background: "transparent",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
+                  height: "140px",
                 }}
               >
                 <img
@@ -209,19 +101,95 @@ const WeDo = () => {
                   style={{
                     border: "3px solid #769863",
                     borderRadius: "15px",
+                    height: "100px",
+                    width: "100px",
                   }}
-                />
+                />{" "}
                 <p
                   style={{
                     fontSize: "24px",
                     fontWeight: "300",
                     fontFamily: "Poppins, sans-serif",
+                    // width: "120px",
+                    textAlign: "center",
                   }}
                 >
                   &nbsp; {images.image4.text}
                 </p>
               </div>
-            </Paper>
+            </div>
+          </Grid>
+
+          <Grid item lg={5} md={6} sm={12} xs={12}>
+            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "140px",
+                }}
+              >
+                <img
+                  src={images.image4.image}
+                  alt={images.image4.text}
+                  className="imageContainer"
+                  style={{
+                    border: "3px solid #769863",
+                    borderRadius: "15px",
+                    height: "100px",
+                    width: "100px",
+                  }}
+                />{" "}
+                <p
+                  style={{
+                    fontSize: "24px",
+                    fontWeight: "300",
+                    fontFamily: "Poppins, sans-serif",
+                    // width: "120px",
+                    textAlign: "center",
+                  }}
+                >
+                  {" "}
+                  &nbsp; {images.image4.text}
+                </p>
+              </div>
+            </div>
+          </Grid>
+          <Grid item lg={5} md={6} sm={12} xs={12}>
+            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "140px",
+                }}
+              >
+                <img
+                  src={images.image1.image}
+                  alt={images.image1.text}
+                  className="imageContainer"
+                  style={{
+                    border: "3px solid #769863",
+                    borderRadius: "15px",
+                    height: "100px",
+                    width: "100px",
+                  }}
+                />{" "}
+                <p
+                  style={{
+                    fontSize: "24px",
+                    fontWeight: "300",
+                    fontFamily: "Poppins, sans-serif",
+                    width: "120px",
+                  }}
+                >
+                  {" "}
+                  &nbsp; {images.image1.text}
+                </p>
+              </div>
+            </div>
           </Grid>
         </Grid>
       </Box>
