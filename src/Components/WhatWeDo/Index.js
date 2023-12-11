@@ -32,13 +32,12 @@ const WeDo = () => {
           fontFamily: "Poppins, sans-serif",
           fontWeight: "700",
           fontSize: { lg: "70px", sm: "70px", xs: "40px" },
+          mb: "5%",
         }}
       >
         What we do
       </Typography>
-      <Box
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
-      >
+      <Box sx={{ ml: { lg: "25rem", md: "15rem", sm: "5rem", xs: "2rem" } }}>
         <Grid
           container
           spacing={2}
@@ -48,8 +47,21 @@ const WeDo = () => {
             justifyContent: "center",
           }}
         >
-          <Grid item lg={5} md={6} sm={12} xs={12}>
-            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <Grid item lg={5} md={6} sm={6} xs={12}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "center",
+                  md: "flex-start",
+                  lg: "flex-start",
+                  sm: "flex-start",
+                },
+                mr: {
+                  xs: "2rem",
+                },
+              }}
+            >
               <div
                 style={{
                   display: "flex",
@@ -82,10 +94,20 @@ const WeDo = () => {
                   &nbsp; {images.image1.text}
                 </p>
               </div>
-            </div>
+            </Box>
           </Grid>
-          <Grid item lg={5} md={6} sm={12} xs={12}>
-            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <Grid item lg={5} md={6} sm={6} xs={12}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "center",
+                  md: "flex-start",
+                  lg: "flex-start",
+                  sm: "flex-start",
+                },
+              }}
+            >
               <div
                 style={{
                   display: "flex",
@@ -95,8 +117,8 @@ const WeDo = () => {
                 }}
               >
                 <img
-                  src={images.image4.image}
-                  alt={images.image4.text}
+                  src={images.image3.image}
+                  alt={images.image3.text}
                   className="imageContainer"
                   style={{
                     border: "3px solid #769863",
@@ -114,14 +136,24 @@ const WeDo = () => {
                     textAlign: "center",
                   }}
                 >
-                  &nbsp; {images.image4.text}
+                  &nbsp; {images.image3.text}
                 </p>
               </div>
-            </div>
+            </Box>
           </Grid>
 
-          <Grid item lg={5} md={6} sm={12} xs={12}>
-            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <Grid item lg={5} md={6} sm={6} xs={12}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "center",
+                  md: "flex-start",
+                  lg: "flex-start",
+                  sm: "flex-start",
+                },
+              }}
+            >
               <div
                 style={{
                   display: "flex",
@@ -154,10 +186,20 @@ const WeDo = () => {
                   &nbsp; {images.image4.text}
                 </p>
               </div>
-            </div>
+            </Box>
           </Grid>
-          <Grid item lg={5} md={6} sm={12} xs={12}>
-            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <Grid item lg={5} md={6} sm={6} xs={12}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "center",
+                  md: "flex-start",
+                  lg: "flex-start",
+                  sm: "flex-start",
+                },
+              }}
+            >
               <div
                 style={{
                   display: "flex",
@@ -167,8 +209,8 @@ const WeDo = () => {
                 }}
               >
                 <img
-                  src={images.image1.image}
-                  alt={images.image1.text}
+                  src={images.image2.image}
+                  alt={images.image2.text}
                   className="imageContainer"
                   style={{
                     border: "3px solid #769863",
@@ -182,14 +224,15 @@ const WeDo = () => {
                     fontSize: "24px",
                     fontWeight: "300",
                     fontFamily: "Poppins, sans-serif",
-                    width: "120px",
+                    // width: "120px",
+                    textAlign: "center",
                   }}
                 >
                   {" "}
-                  &nbsp; {images.image1.text}
+                  &nbsp; {images.image2.text}
                 </p>
               </div>
-            </div>
+            </Box>
           </Grid>
         </Grid>
       </Box>
