@@ -20,6 +20,7 @@ import {
 import { UserGroupIcon } from "@heroicons/react/24/solid";
 import { namastheLogo } from "../../config/Images/Images";
 import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
 const navListMenuItems = [
   {
     title: "Our Team",
@@ -106,7 +107,7 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <div style={{ marginRight: "17%" }}>
+    <Box sx={{ mr: { xl: "17%", lg: "7%" } }}>
       <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 lg:justify-end">
         <Link to="/" style={{ textDecoration: "none" }}>
           <Typography
@@ -172,7 +173,7 @@ function NavList() {
           </ListItem>
         </Typography>
       </List>
-    </div>
+    </Box>
   );
 }
 

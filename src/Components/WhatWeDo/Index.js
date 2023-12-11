@@ -32,12 +32,16 @@ const WeDo = () => {
           fontFamily: "Poppins, sans-serif",
           fontWeight: "700",
           fontSize: { lg: "70px", sm: "70px", xs: "40px" },
-          mb: "5%",
+          mb: "5% ",
         }}
       >
         What we do
       </Typography>
-      <Box sx={{ ml: { lg: "25rem", md: "15rem", sm: "5rem", xs: "2rem" } }}>
+      <Box
+        sx={{
+          ml: { lg: "15rem", xl: "25rem", md: "15rem", sm: "5rem", xs: "2rem" },
+        }}
+      >
         <Grid
           container
           spacing={2}
