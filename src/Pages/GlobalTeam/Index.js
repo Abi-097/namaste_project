@@ -1,10 +1,11 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import { aboutus, aboutus1, aboutus2, email } from "../../config/Images/Images";
-
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
+import "./Style.css";
 const data = [
   {
     id: 1,
@@ -178,8 +179,11 @@ const GlobalTeam = () => {
                     <br />
                   </p>
                   <a href={`mailto:${members.email}`}>
-                    {" "}
-                    <img src={email} alt="email" />{" "}
+                    <IconButton className="global_IconButton">
+                      <Tooltip title={members.email} arrow>
+                        <img src={email} alt="email" />{" "}
+                      </Tooltip>
+                    </IconButton>
                   </a>
                 </Box>
               </div>

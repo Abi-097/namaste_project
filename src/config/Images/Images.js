@@ -27,7 +27,6 @@ export const Rectangle1 = require("../../Common/Assets/Images/Rectangle__3_-remo
 export const Rectangle2 = require("../../Common/Assets/Images/Rectangle__4_-removebg-preview.png");
 export const Rectangle3 = require("../../Common/Assets/Images/Rectangle__5_-removebg-preview.png");
 export const Rectangle4 = require("../../Common/Assets/Images/Rectangle-removebg-preview.png");
-// export const group2 = require("../../Common/Assets/Images/Group2.png");
 
 export const projectcard1 = require("../../Common/Assets/Images/Clip path group.png");
 export const gif = require("../../Common/Assets/Images/unity-come-together.gif");

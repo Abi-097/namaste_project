@@ -1,12 +1,9 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import {
-  aboutus,
   aboutus1,
-  aboutus2,
   email,
   asiri,
   raj,
@@ -22,16 +19,15 @@ import {
   Shehara,
   yas,
 } from "../../config/Images/Images";
-
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
+import "./Style.css";
 const data = [
   {
     id: 1,
     image: asiri,
     name: "Dr. Asiri Hewamalage",
     position: "Principle Investigator",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -39,9 +35,6 @@ const data = [
     image: aboutus1,
     name: "Pat Heffernan",
     position: "President",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -49,9 +42,6 @@ const data = [
     image: raj,
     name: "Dr Raj Phriyadharshini",
     position: "Research Team Director",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -59,10 +49,6 @@ const data = [
     image: chamika,
     name: "Chamika Hansamalee",
     position: "Coordinator - Community Engagement and Involement (CEI)",
-
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -70,10 +56,6 @@ const data = [
     image: hasuni,
     name: "Hasuni Yasora Withana",
     position: "Research Associate",
-
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -82,20 +64,13 @@ const data = [
 
     name: "Heshali De Silva",
     position: "Project Secretary",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
     id: 7,
     image: poornima,
     name: "Poornima Madhubhashini",
-
     position: "Accountant",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -103,9 +78,6 @@ const data = [
     image: nethma,
     name: "Nethma Abeysingha",
     position: "Research Associate",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -113,9 +85,6 @@ const data = [
     image: piumi,
     name: "Piumi Dolawaththa",
     position: "Research Associate & CST facilitator",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -123,20 +92,13 @@ const data = [
     image: rasika,
     name: "Rasika Haggepola Arachchi",
     position: "Research Associate",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
     id: 11,
     image: sakuni,
     name: "Sakuni Hingurangala",
-
     position: "Direction coordinator",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
 
@@ -144,11 +106,7 @@ const data = [
     id: 12,
     image: shashini,
     name: "Shashini Hewavithanagamage",
-
     position: "Intervention Coordinator",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -156,9 +114,6 @@ const data = [
     image: Shehara,
     name: "Shehara Mayadunne",
     position: "Research Associate",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
   {
@@ -166,9 +121,6 @@ const data = [
     image: yas,
     name: "R. T. S. Yashodha Rajapaksha",
     position: "Research Associate & PASS PLUS Master Trainer",
-    description: "Pat — marketing strategist, writer, and founder of",
-    description2: "Marketing Partners — serves as creative change ",
-    description3: "director for our client team.",
     email: "aaa@gmail.com",
   },
 ];
@@ -223,7 +175,7 @@ const SLTeam = () => {
               }}
             >
               <div>
-                <Box>
+                <Box marginBottom="4px">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -232,42 +184,39 @@ const SLTeam = () => {
                     style={{ borderRadius: "15px" }}
                   />
                 </Box>
-                <Box>
-                  <p
-                    style={{
-                      fontWeight: "500",
-                      fontSize: "16px",
-                      color: "#474747",
-                    }}
-                  >
-                    {member.name}
-                  </p>
-                  <p
-                    style={{
-                      fontWeight: "500",
-                      fontSize: "16px",
-                      color: "#474747",
-                    }}
-                  >
-                    {member.position}
-                  </p>
-                  <p
-                    style={{
-                      //   fontWeight: "500",
-                      fontSize: "16px",
-                      color: "#474747",
-                    }}
-                  >
-                    {member.description} <br />
-                    {member.description2}
-                    <br />
-                    {member.description3}
-                  </p>
-                  <a href={`mailto:${member.email}`}>
-                    {" "}
-                    <img src={email} alt="email" />{" "}
-                  </a>
-                </Box>
+
+                <p
+                  style={{
+                    fontWeight: "500",
+                    fontSize: "16px",
+                    color: "#474747",
+                  }}
+                >
+                  {member.name}
+                </p>
+                <p
+                  style={{
+                    fontWeight: "500",
+                    fontSize: "16px",
+                    color: "#474747",
+                    marginBottom: "2px",
+                  }}
+                >
+                  {member.position}
+                </p>
+                <p
+                  style={{
+                    fontSize: "16px",
+                    color: "#474747",
+                  }}
+                ></p>
+                <a href={`mailto:${member.email}`}>
+                  <IconButton className="sl_IconButton">
+                    <Tooltip title={member.email} arrow>
+                      <img src={email} alt="email" />{" "}
+                    </Tooltip>
+                  </IconButton>
+                </a>
               </div>
             </Grid>
           ))}
