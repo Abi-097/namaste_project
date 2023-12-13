@@ -1,3 +1,5 @@
+import Team from "../../Pages/Team/Index";
+
 export const namastheLogo = require("../../Common/Assets/Images/NAMASTE_Curves-1 1.png");
 export const namastheLogo2 = require("../../Common/Assets/Images/NAMASTE_Curves-1 2.png");
 export const facebook = require("../../Common/Assets/Images/facebook.png");
@@ -39,3 +41,18 @@ export const projectcard2 = require("../../Common/Assets/Images/card.png");
 export const Team1 = require("../../Common/Assets/Images/team1.png");
 export const Team2 = require("../../Common/Assets/Images/team2.png");
 export const underconstruction = require("../../Common/Assets/Images/under-construction-2891888_1280.jpg");
+
+// SL Team
+export const asiri = require("../../Common/Assets/Images/asiri.png");
+export const raj = require("../../Common/Assets/Images/dr raj.png");
+export const chamika = require("../../Common/Assets/Images/chamika.png");
+export const hasuni = require("../../Common/Assets/Images/hasuni.jpg");
+export const heshali = require("../../Common/Assets/Images/heshali.png");
+export const poornima = require("../../Common/Assets/Images/madu.png");
+export const nethma = require("../../Common/Assets/Images/nethma.png");
+export const piumi = require("../../Common/Assets/Images/piyumi.png");
+export const rasika = require("../../Common/Assets/Images/rasika.png");
+export const sakuni = require("../../Common/Assets/Images/sakuni.png");
+export const shashini = require("../../Common/Assets/Images/professional photo.png");
+export const Shehara = require("../../Common/Assets/Images/shehara.png");
+export const yas = require("../../Common/Assets/Images/yashoda.png");

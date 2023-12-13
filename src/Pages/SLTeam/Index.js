@@ -3,14 +3,32 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import { aboutus, aboutus1, aboutus2, email } from "../../config/Images/Images";
+import {
+  aboutus,
+  aboutus1,
+  aboutus2,
+  email,
+  asiri,
+  raj,
+  chamika,
+  hasuni,
+  heshali,
+  poornima,
+  nethma,
+  piumi,
+  rasika,
+  sakuni,
+  shashini,
+  Shehara,
+  yas,
+} from "../../config/Images/Images";
 
 const data = [
   {
     id: 1,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: asiri,
+    name: "Dr. Asiri Hewamalage",
+    position: "Principle Investigator",
     description: "Pat — marketing strategist, writer, and founder of",
     description2: "Marketing Partners — serves as creative change ",
     description3: "director for our client team.",
@@ -28,9 +46,9 @@ const data = [
   },
   {
     id: 3,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: raj,
+    name: "Dr Raj Phriyadharshini",
+    position: "Research Team Director",
     description: "Pat — marketing strategist, writer, and founder of",
     description2: "Marketing Partners — serves as creative change ",
     description3: "director for our client team.",
@@ -38,9 +56,10 @@ const data = [
   },
   {
     id: 4,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: chamika,
+    name: "Chamika Hansamalee",
+    position: "Coordinator - Community Engagement and Involement (CEI)",
+
     description: "Pat — marketing strategist, writer, and founder of",
     description2: "Marketing Partners — serves as creative change ",
     description3: "director for our client team.",
@@ -48,9 +67,10 @@ const data = [
   },
   {
     id: 5,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: hasuni,
+    name: "Hasuni Yasora Withana",
+    position: "Research Associate",
+
     description: "Pat — marketing strategist, writer, and founder of",
     description2: "Marketing Partners — serves as creative change ",
     description3: "director for our client team.",
@@ -58,9 +78,10 @@ const data = [
   },
   {
     id: 6,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: heshali,
+
+    name: "Heshali De Silva",
+    position: "Project Secretary",
     description: "Pat — marketing strategist, writer, and founder of",
     description2: "Marketing Partners — serves as creative change ",
     description3: "director for our client team.",
@@ -68,9 +89,10 @@ const data = [
   },
   {
     id: 7,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: poornima,
+    name: "Poornima Madhubhashini",
+
+    position: "Accountant",
     description: "Pat — marketing strategist, writer, and founder of",
     description2: "Marketing Partners — serves as creative change ",
     description3: "director for our client team.",
@@ -78,9 +100,9 @@ const data = [
   },
   {
     id: 8,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: nethma,
+    name: "Nethma Abeysingha",
+    position: "Research Associate",
     description: "Pat — marketing strategist, writer, and founder of",
     description2: "Marketing Partners — serves as creative change ",
     description3: "director for our client team.",
@@ -88,9 +110,62 @@ const data = [
   },
   {
     id: 9,
-    image: aboutus1,
-    name: "Pat Heffernan",
-    position: "President",
+    image: piumi,
+    name: "Piumi Dolawaththa",
+    position: "Research Associate & CST facilitator",
+    description: "Pat — marketing strategist, writer, and founder of",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
+    email: "aaa@gmail.com",
+  },
+  {
+    id: 10,
+    image: rasika,
+    name: "Rasika Haggepola Arachchi",
+    position: "Research Associate",
+    description: "Pat — marketing strategist, writer, and founder of",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
+    email: "aaa@gmail.com",
+  },
+  {
+    id: 11,
+    image: sakuni,
+    name: "Sakuni Hingurangala",
+
+    position: "Direction coordinator",
+    description: "Pat — marketing strategist, writer, and founder of",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
+    email: "aaa@gmail.com",
+  },
+
+  {
+    id: 12,
+    image: shashini,
+    name: "Shashini Hewavithanagamage",
+
+    position: "Intervention Coordinator",
+    description: "Pat — marketing strategist, writer, and founder of",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
+    email: "aaa@gmail.com",
+  },
+  {
+    id: 13,
+    image: Shehara,
+    name: "Shehara Mayadunne",
+    position: "Research Associate",
+    description: "Pat — marketing strategist, writer, and founder of",
+    description2: "Marketing Partners — serves as creative change ",
+    description3: "director for our client team.",
+    email: "aaa@gmail.com",
+  },
+  {
+    id: 14,
+    image: yas,
+    name: "R. T. S. Yashodha Rajapaksha",
+    position: "Research Associate & PASS PLUS Master Trainer",
     description: "Pat — marketing strategist, writer, and founder of",
     description2: "Marketing Partners — serves as creative change ",
     description3: "director for our client team.",
@@ -148,7 +223,13 @@ const SLTeam = () => {
             >
               <div>
                 <Box>
-                  <img src={member.image} alt={member.name} />
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    width="349px"
+                    height="520px"
+                    style={{ borderRadius: "15px" }}
+                  />
                 </Box>
                 <Box>
                   <p
