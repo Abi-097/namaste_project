@@ -18,6 +18,7 @@ import SLTeam from "./Pages/SLTeam/Index";
 import Footer1 from "./Components/Footer/test";
 import Home from "./Pages/Home/Index";
 import NeedJoin from "./Pages/NeedToJoin/Index";
+import LearnMore from "./Pages/LearnMore/Index";
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,10 @@ function App() {
 
       <Routes>
         <Route path="/join" element={<NeedJoin />}></Route>
+      </Routes>
+
+      <Routes>
+        <Route path="/learn-more" element={<LearnMore />}></Route>
       </Routes>
 
       {/* </Router> */}

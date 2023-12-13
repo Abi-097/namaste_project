@@ -1,11 +1,3 @@
-import Paper from "@mui/material/Paper";
-// import {
-//   Rectangle,
-//   Rectangle2,
-//   Rectangle3,
-//   Rectangle4,
-//   Rectangle5,
-// } from "../../config/Images/Images";
 import {
   Rectangle,
   Rectangle2,
@@ -16,14 +8,6 @@ import {
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 // import "./Style.css";
-import { Typography } from "@mui/material";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-} from "@material-tailwind/react";
 
 const cardData = [
   {
@@ -45,7 +29,6 @@ const cardData = [
 
 const FooterCarousel = () => {
   const responsive = {
-    // Define your responsive settings here
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
@@ -70,7 +53,7 @@ const FooterCarousel = () => {
       <Carousel
         responsive={responsive}
         autoPlay={true}
-        autoPlaySpeed={4000}
+        autoPlaySpeed={3000}
         infinite={true}
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         containerClass="carousel-container"

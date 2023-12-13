@@ -4,6 +4,7 @@ import { Carousel1, Carousel2, Carousel3 } from "../../config/Images/Images";
 import Box from "@mui/material/Box";
 import ProjectCard from "../Card/Index";
 import { Typography } from "@material-tailwind/react";
+// import { Typography } from "@mui/material";
 const slideImages = [
   {
     image: Carousel1,

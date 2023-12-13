@@ -5,7 +5,6 @@ import {
   engagement1,
   community1,
 } from "../../config/Images/Images";
-// mport React from "react";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Typography, Box } from "@mui/material";

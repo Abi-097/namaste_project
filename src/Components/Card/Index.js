@@ -82,10 +82,6 @@ const ProjectCard = () => {
                 child’s needs and know how best to support them.
               </Typography>
 
-              {/* Learn More Button */}
-              {/* <Button variant="contained" style={{ background: "transparent" }}>
-                Learn More
-              </Button> */}
               <a
                 href="/learn-more"
                 style={{
@@ -183,17 +179,25 @@ const ProjectCard = () => {
                 child’s needs and know how best to support them.
               </Typography>
 
-              {/* Learn More Button */}
-              <p
+              <a
+                href="/learn-more"
                 style={{
-                  textAlign: "center",
-                  fontWeight: "600",
+                  textDecoration: "none",
                   color: "#769863",
-                  fontFamily: "Poppins, sans-serif",
+                  cursor: "pointer",
                 }}
               >
-                Learn More
-              </p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontWeight: "600",
+                    color: "#769863",
+                    fontFamily: "Poppins, sans-serif",
+                  }}
+                >
+                  Learn More
+                </p>
+              </a>
             </CardContent>
           </Card>
         </Grid>

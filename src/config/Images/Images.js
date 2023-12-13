@@ -55,3 +55,5 @@ export const sakuni = require("../../Common/Assets/Images/sakuni.png");
 export const shashini = require("../../Common/Assets/Images/professional photo.png");
 export const Shehara = require("../../Common/Assets/Images/shehara.png");
 export const yas = require("../../Common/Assets/Images/yashoda.png");
+
+export const laptopimg = require("../../Common/Assets/Images/laptopimg.png");
