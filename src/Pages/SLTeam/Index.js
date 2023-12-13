@@ -172,6 +172,7 @@ const data = [
     email: "aaa@gmail.com",
   },
 ];
+
 const SLTeam = () => {
   return (
     <div>
