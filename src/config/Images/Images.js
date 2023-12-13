@@ -29,7 +29,7 @@ export const Rectangle3 = require("../../Common/Assets/Images/Rectangle__5_-remo
 export const Rectangle4 = require("../../Common/Assets/Images/Rectangle-removebg-preview.png");
 
 export const projectcard1 = require("../../Common/Assets/Images/Clip path group.png");
-export const gif = require("../../Common/Assets/Images/unity-come-together.gif");
+export const gif = require("../../Common/Assets/Images/Untitled design.gif");
 
 export const aboutus = require("../../Common/Assets/Images/Copy of About us (17) 1.png");
 export const aboutus1 = require("../../Common/Assets/Images/Copy of About us (17) 2.png");

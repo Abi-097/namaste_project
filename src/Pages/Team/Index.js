@@ -1,10 +1,6 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { Team1, Team2, gif } from "../../config/Images/Images";
 import { Link } from "react-router-dom";
@@ -166,7 +162,7 @@ const Team = () => {
           marginBottom: "2rem",
         }}
       >
-        <img src={gif} alt="" />
+        <img src={gif} alt="gif" />
       </div>
     </div>
   );

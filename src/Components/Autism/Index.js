@@ -6,14 +6,15 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
 import { group2 } from "../../config/Images/Images";
 import { group1 } from "../../config/Images/Images";
+import "./style.css";
+
 const Autism = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <div>
+    <div className="autism_body">
       <Paper
         elevation={0}
         sx={{
@@ -49,27 +50,16 @@ const Autism = () => {
               alignItems="center"
               variant="h4"
               gutterBottom
-              style={{
-                fontSize: "36px",
-                fontWeight: "600",
-                color: "rgba(65, 63, 62, 1)",
-                fontFamily: "Poppins, sans-serif",
-              }}
+              className="autism_Typography"
             >
               What is Autism
             </Typography>
           </Grid>
           <Grid item>
             <Typography
+              className="autism_Typography2"
               variant="body1"
               paragraph
-              style={{
-                fontSize: "30px",
-                fontStyle: "italic",
-                fontWeight: "500",
-                color: "#040404",
-                fontFamily: "Poppins, sans-serif",
-              }}
               sx={{
                 ml: {
                   lg: "4rem",
@@ -85,8 +75,23 @@ const Autism = () => {
               constitutes a diverse group of conditions related to the
               development of the brain. Characteristics may be detected in early
               childhood, but autism is often not diagnosed until much later.
-              <br />
-              -World Health Organization-
+            </Typography>
+            <Typography
+              className="autism_who"
+              variant="body1"
+              paragraph
+              sx={{
+                ml: {
+                  lg: "4rem",
+                  md: "3rem",
+                },
+                mr: {
+                  lg: "4rem",
+                  md: "3rem",
+                },
+              }}
+            >
+              -World Health Organization-
             </Typography>
             {!isSmallScreen && (
               <Grid container justifyContent="flex-start" alignItems="flex-end">

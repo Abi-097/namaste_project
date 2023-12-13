@@ -11,7 +11,7 @@ import FooterCarousel from "./Components/FooterCarousel/Index";
 // import NavbarWithMegaMenu from "./Components/Navbar/Index";
 import { NavbarWithMegaMenu } from "./Components/Navbar/Index";
 import WeDo from "./Components/WhatWeDo/Index";
-import { Routes, Router, Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Team from "./Pages/Team/Index";
 import GlobalTeam from "./Pages/GlobalTeam/Index";
 import SLTeam from "./Pages/SLTeam/Index";
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <NavbarWithMegaMenu />
-
+      {/* <CarouselTransition /> */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>
@@ -43,9 +43,8 @@ function App() {
         <Route path="/join" element={<NeedJoin />}></Route>
       </Routes>
 
-      
       {/* </Router> */}
-      {/* <CarouselTransition /> */}
+
       {/* <Carousel /> */}
       {/* <ProjectCard /> */}
       {/* <Cara /> */}
