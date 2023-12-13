@@ -18,6 +18,8 @@ import {
   shashini,
   Shehara,
   yas,
+  venura,
+  abi,
 } from "../../config/Images/Images";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
@@ -121,6 +123,20 @@ const data = [
     image: yas,
     name: "R. T. S. Yashodha Rajapaksha",
     position: "Research Associate & PASS PLUS Master Trainer",
+    email: "aaa@gmail.com",
+  },
+  {
+    id: 15,
+    image: abi,
+    name: "Abirami Thanabalasundaram",
+    position: "Research Associate",
+    email: "aaa@gmail.com",
+  },
+  {
+    id: 16,
+    image: venura,
+    name: "Venura Rathnayaka",
+    position: "Data Manager",
     email: "aaa@gmail.com",
   },
 ];
