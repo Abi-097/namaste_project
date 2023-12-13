@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./testing.css";
 
 const Carousel = ({ children }) => {
   const [counter, setCounter] = useState(1);
