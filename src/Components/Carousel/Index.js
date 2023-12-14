@@ -1,6 +1,9 @@
 import React from "react";
 import { Carousel } from "@material-tailwind/react";
 import { Carousel1, Carousel2, Carousel3 } from "../../config/Images/Images";
+// import Carousel1 from "../../Common/Assets/Images/Property1.svg";
+// import Carousel2 from "../../Common/Assets/Images/Property2.svg";
+// import Carousel3 from "../../Common/Assets/Images/Property3.svg";
 import Box from "@mui/material/Box";
 import ProjectCard from "../Card/Index";
 import { Typography } from "@material-tailwind/react";
@@ -49,6 +52,7 @@ export function CarouselTransition() {
             src={slide.image}
             alt={`Slide ${index}`}
             className="h-full w-full rounded-lg object-cover object-center"
+            // style={{ objectFit: "cover" }}
           />
         ))}
       </Carousel>
@@ -58,8 +62,8 @@ export function CarouselTransition() {
           style={{
             position: "absolute",
             // bottom: "-px",
-            top: "34%",
-            left: "20px",
+            top: "33%",
+            marginLeft: "6rem",
             display: "flex",
             alignItems: "center",
           }}
@@ -71,7 +75,7 @@ export function CarouselTransition() {
               style={{
                 color: "#FFF",
                 fontFamily: "Poppins, sans-serif",
-                marginLeft: "6rem",
+                // marginLeft: "6rem",
                 textShadow: "6px 6px 20px rgba(0, 0, 0, 0.40)",
                 fontWeight: 600,
                 fontSize: "80px",
@@ -86,7 +90,7 @@ export function CarouselTransition() {
                 textAlign: "left",
                 color: "#FFF",
                 fontFamily: "Poppins, sans-serif",
-                marginLeft: "6rem",
+                // marginLeft: "6rem",
                 textShadow: "6px 6px 20px rgba(0, 0, 0, 0.40)",
                 fontWeight: 600,
                 fontSize: "32px",

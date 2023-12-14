@@ -76,10 +76,9 @@ const ProjectCard = () => {
                   fontFamily: "Poppins, sans-serif",
                 }}
               >
-                Most children with neurodevelopmental disabilities living in
-                South Asia have no access to services. This means that families
-                are not given the help they need to fully understand their
-                child’s needs and know how best to support them.
+                A £6.95 million Global Health Research Unit on Neurodevelopment
+                and Autism for children in South Asia is to launch with the help
+                of University of Manchester expertise.
               </Typography>
 
               <a

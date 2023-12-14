@@ -50,7 +50,8 @@ const data = [
     id: 4,
     image: chamika,
     name: "Chamika Hansamalee",
-    position: "Coordinator - Community Engagement and Involement (CEI)",
+    position: "Coordinator - Community Engagement",
+    position2: "and Involement (CEI)",
     email: "aaa@gmail.com",
   },
   {
@@ -191,13 +192,13 @@ const SLTeam = () => {
               }}
             >
               <div>
-                <Box marginBottom="4px">
+                <Box marginBottom="4px" border="1px solid">
                   <img
                     src={member.image}
                     alt={member.name}
-                    width="349px"
-                    height="520px"
                     style={{ borderRadius: "15px" }}
+                    width="339px"
+                    height="512px"
                   />
                 </Box>
 
@@ -219,6 +220,8 @@ const SLTeam = () => {
                   }}
                 >
                   {member.position}
+                  <br />
+                  {member.position2}
                 </p>
                 <p
                   style={{

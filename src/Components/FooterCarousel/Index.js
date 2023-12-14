@@ -48,16 +48,27 @@ const FooterCarousel = () => {
 
   return (
     <div
-      style={{ marginTop: "5rem", backgroundColor: "rgba(118, 152, 99, 0.3)" }}
+      style={{
+        marginTop: "5rem",
+        backgroundColor: "rgba(118, 152, 99, 0.3)",
+        marginBottom: "9rem",
+      }}
     >
       <Carousel
         responsive={responsive}
         autoPlay={true}
         autoPlaySpeed={3000}
         infinite={true}
+        Infinite
+        mode={true}
+        Auto
+        play
+        interval={5000}
         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         containerClass="carousel-container"
+        // customTransition="transform 500ms ease-in"
         customTransition="transform 500ms ease-in"
+        transitionDuration={500}
       >
         {cardData.map((data, index) => (
           <div
@@ -66,7 +77,7 @@ const FooterCarousel = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              height: "190px",
+              height: "220px",
               transition: "transform 500ms ease-in",
             }}
           >

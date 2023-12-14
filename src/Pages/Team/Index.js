@@ -160,6 +160,7 @@ const Team = () => {
           justifyContent: "center",
           alignItems: "center",
           marginBottom: "2rem",
+          marginTop: "6px",
         }}
       >
         <img src={gif} alt="gif" />
