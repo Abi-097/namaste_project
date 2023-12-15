@@ -192,7 +192,7 @@ const SLTeam = () => {
               }}
             >
               <div>
-                <Box marginBottom="4px" border="1px solid">
+                <Box marginBottom="4px">
                   <img
                     src={member.image}
                     alt={member.name}

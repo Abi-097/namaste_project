@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, Typography, Button, Box } from "@mui/material";
+import { Card, CardContent, Typography, Box } from "@mui/material";
 import { projectcard1, projectcard2 } from "../../config/Images/Images";
 import { Grid } from "@mui/material";
 const ProjectCard = () => {
@@ -25,6 +25,7 @@ const ProjectCard = () => {
               boxShadow: "2px 2px 20px 3px rgba(0, 0, 0, 0.06)",
               textAlign: "center",
               width: "22rem",
+              height: "22rem",
               marginTop: {
                 lg: "-100px",
                 md: "-50px",
@@ -103,6 +104,7 @@ const ProjectCard = () => {
             </CardContent>
           </Card>
         </Grid>
+
         <Grid
           item
           xs={12}
@@ -122,6 +124,7 @@ const ProjectCard = () => {
               boxShadow: "2px 2px 20px 3px rgba(0, 0, 0, 0.06)",
               textAlign: "center",
               width: "22rem",
+              height: "22rem",
               marginTop: {
                 lg: "-100px",
                 md: "-50px",
