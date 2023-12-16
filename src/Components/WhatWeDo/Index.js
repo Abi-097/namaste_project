@@ -11,10 +11,13 @@ import { Typography, Box } from "@mui/material";
 import "./Style.css";
 
 const images = {
-  image1: { image: detection1, text: " Detection" },
-  image2: { image: intervention1, text: "Intervention" },
-  image3: { image: engagement1, text: "Engagement" },
-  image4: { image: community1, text: "Community" },
+  image1: { image: detection1, text: " Detection workstream" },
+  image2: { image: intervention1, text: "Implementation workstream" },
+  image3: { image: engagement1, text: "Capacity building workstream" },
+  image4: {
+    image: community1,
+    text: "Community Engagement and Inclusion workstream",
+  },
 };
 const WeDo = () => {
   return (
@@ -181,12 +184,10 @@ const WeDo = () => {
                     fontSize: "24px",
                     fontWeight: "300",
                     fontFamily: "Poppins, sans-serif",
-                    // width: "120px",
                     textAlign: "center",
                   }}
                 >
-                  {" "}
-                  &nbsp; {images.image4.text}
+                  {images.image4.text}
                 </p>
               </div>
             </Box>

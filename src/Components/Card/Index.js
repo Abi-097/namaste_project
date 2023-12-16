@@ -1,7 +1,8 @@
 import React from "react";
-import { Card, CardContent, Typography, Box } from "@mui/material";
+import { Card, CardContent, Typography, Box, IconButton } from "@mui/material";
 import { projectcard1, projectcard2 } from "../../config/Images/Images";
 import { Grid } from "@mui/material";
+import "./style.css";
 const ProjectCard = () => {
   return (
     <div style={{}}>
@@ -37,6 +38,10 @@ const ProjectCard = () => {
               pt: 2,
               pl: 1,
               pr: 1,
+              transition: "transform 0.3s",
+              "&:hover": {
+                transform: "scale(1.05)",
+              },
             }}
           >
             <CardContent>
@@ -70,6 +75,7 @@ const ProjectCard = () => {
                 variant="body1"
                 color="textSecondary"
                 paragraph
+                className=""
                 style={{
                   color: "#413F3E",
                   fontSize: "12px",
@@ -82,24 +88,8 @@ const ProjectCard = () => {
                 of University of Manchester expertise.
               </Typography>
 
-              <a
-                href="/learn-more"
-                style={{
-                  textDecoration: "none",
-                  color: "#769863",
-                  cursor: "pointer",
-                }}
-              >
-                <p
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "600",
-                    color: "#769863",
-                    fontFamily: "Poppins, sans-serif",
-                  }}
-                >
-                  Learn More
-                </p>
+              <a href="/learn-more">
+                <p className="learn_p">Learn More</p>
               </a>
             </CardContent>
           </Card>
@@ -135,6 +125,10 @@ const ProjectCard = () => {
               pt: 2,
               pl: 1,
               pr: 1,
+              transition: "transform 0.3s",
+              "&:hover": {
+                transform: "scale(1.05)",
+              },
             }}
           >
             <CardContent>
@@ -181,24 +175,8 @@ const ProjectCard = () => {
                 child’s needs and know how best to support them.
               </Typography>
 
-              <a
-                href="/learn-more"
-                style={{
-                  textDecoration: "none",
-                  color: "#769863",
-                  cursor: "pointer",
-                }}
-              >
-                <p
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "600",
-                    color: "#769863",
-                    fontFamily: "Poppins, sans-serif",
-                  }}
-                >
-                  Learn More
-                </p>
+              <a href="/projectobj" className="learn_a">
+                <p className="learn_p">Learn More</p>
               </a>
             </CardContent>
           </Card>

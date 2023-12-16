@@ -99,8 +99,8 @@ const LearnMoreCard = () => {
           <img
             src={laptopimg}
             alt="laptopimg"
-            width="650px"
-            height="650px"
+            // width="650px"
+            // height="650px"
             style={{
               zIndex: 1,
             }}

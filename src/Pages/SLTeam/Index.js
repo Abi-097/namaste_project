@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -124,6 +124,7 @@ const data = [
     image: yas,
     name: "R. T. S. Yashodha Rajapaksha",
     position: "Research Associate & PASS PLUS Master Trainer",
+    position2: "",
     email: "aaa@gmail.com",
   },
   {
@@ -143,6 +144,34 @@ const data = [
 ];
 
 const SLTeam = () => {
+  const [zoomedIndex, setZoomedIndex] = useState(null);
+  const zoomedImageRef = useRef(null);
+
+  const handleImageClick = (index) => {
+    setZoomedIndex(index);
+  };
+
+  const handleCloseZoom = () => {
+    setZoomedIndex(null);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        zoomedImageRef.current &&
+        !zoomedImageRef.current.contains(event.target)
+      ) {
+        handleCloseZoom();
+      }
+    };
+
+    document.body.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.body.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div>
       <Typography
@@ -173,11 +202,11 @@ const SLTeam = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            alignitem: "center",
+            alignItem: "center",
             p: 9,
           }}
         >
-          {data.map((member) => (
+          {data.map((member, index) => (
             <Grid
               key={member.id}
               item
@@ -191,12 +220,25 @@ const SLTeam = () => {
                 alignItem: "center",
               }}
             >
-              <div>
-                <Box marginBottom="4px">
+              <div
+                ref={zoomedIndex === index ? zoomedImageRef : null}
+                style={{
+                  cursor: "pointer",
+                  transform: zoomedIndex === index ? "scale(1.05)" : "scale(1)",
+                }}
+              >
+                <Box marginBottom="4px" onClick={() => handleImageClick(index)}>
                   <img
                     src={member.image}
                     alt={member.name}
-                    style={{ borderRadius: "15px" }}
+                    style={{
+                      borderRadius: "15px",
+                      transition: "transform 0.3s",
+                      // cursor: "pointer",
+                      // transform:
+                      //   zoomedIndex === index ? "scale(1.05)" : "scale(1)",
+                    }}
+                    // Trigger zoom on image click
                     width="339px"
                     height="512px"
                   />
@@ -209,7 +251,7 @@ const SLTeam = () => {
                     color: "#474747",
                   }}
                 >
-                  {member.name}
+                  <b>{member.name}</b>
                 </p>
                 <p
                   style={{

@@ -21,6 +21,11 @@
   transform: translateX(-50%);
 }
 
+.imageContainer {
+  transition: transform 0.3s ease !important;
+}
+
 .imageContainer:hover {
   border-color: purple !important;
+  transform: scale(1.2) !important;
 }

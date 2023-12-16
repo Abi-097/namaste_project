@@ -19,6 +19,7 @@ import Footer1 from "./Components/Footer/test";
 import Home from "./Pages/Home/Index";
 import NeedJoin from "./Pages/NeedToJoin/Index";
 import LearnMore from "./Pages/LearnMore/Index";
+import ProjectObjectives from "./Pages/ProjectObjectives/Index";
 function App() {
   return (
     <div className="App">
@@ -46,6 +47,9 @@ function App() {
 
       <Routes>
         <Route path="/learn-more" element={<LearnMore />}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/projectobj" element={<ProjectObjectives />}></Route>
       </Routes>
 
       {/* </Router> */}
