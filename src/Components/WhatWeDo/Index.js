@@ -53,12 +53,12 @@ const WeDo = () => {
             justifyContent: "center",
           }}
         >
-          <Grid item lg={5} md={6} sm={6} xs={12}>
+          <Grid item lg={5} md={6} sm={12} xs={12}>
             <Box
               sx={{
                 display: "flex",
                 justifyContent: {
-                  xs: "center",
+                  xs: "flex-start",
                   md: "flex-start",
                   lg: "flex-start",
                   sm: "flex-start",
@@ -87,27 +87,26 @@ const WeDo = () => {
                     width: "100px",
                   }}
                 />{" "}
-                <p
-                  style={{
+                <Typography
+                  sx={{
+                    paddingLeft: { xs: 2 },
+                    textAlign: { xs: "left", lg: "left" },
                     fontSize: "24px",
                     fontWeight: "300",
                     fontFamily: "Poppins, sans-serif",
-                    // width: "20%",
-                    // margin: "0",
-                    textAlign: "center",
                   }}
                 >
-                  &nbsp; {images.image1.text}
-                </p>
+                  {images.image1.text}
+                </Typography>
               </div>
             </Box>
           </Grid>
-          <Grid item lg={5} md={6} sm={6} xs={12}>
+          <Grid item lg={5} md={6} sm={12} xs={12}>
             <Box
               sx={{
                 display: "flex",
                 justifyContent: {
-                  xs: "center",
+                  xs: "flex-start",
                   md: "flex-start",
                   lg: "flex-start",
                   sm: "flex-start",
@@ -133,27 +132,27 @@ const WeDo = () => {
                     width: "100px",
                   }}
                 />{" "}
-                <p
-                  style={{
+                <Typography
+                  sx={{
+                    paddingLeft: { xs: 2 },
+                    textAlign: { xs: "left", lg: "left" },
                     fontSize: "24px",
                     fontWeight: "300",
                     fontFamily: "Poppins, sans-serif",
-                    // width: "120px",
-                    textAlign: "center",
                   }}
                 >
-                  &nbsp; {images.image3.text}
-                </p>
+                  {images.image3.text}
+                </Typography>
               </div>
             </Box>
           </Grid>
 
-          <Grid item lg={5} md={6} sm={6} xs={12}>
+          <Grid item lg={5} md={6} sm={12} xs={12}>
             <Box
               sx={{
                 display: "flex",
                 justifyContent: {
-                  xs: "center",
+                  xs: "flex-start",
                   md: "flex-start",
                   lg: "flex-start",
                   sm: "flex-start",
@@ -178,26 +177,28 @@ const WeDo = () => {
                     height: "100px",
                     width: "100px",
                   }}
-                />{" "}
-                <p
-                  style={{
+                />
+
+                <Typography
+                  sx={{
+                    paddingLeft: { xs: 2 },
+                    textAlign: { xs: "left", lg: "left" },
                     fontSize: "24px",
                     fontWeight: "300",
                     fontFamily: "Poppins, sans-serif",
-                    textAlign: "center",
                   }}
                 >
                   {images.image4.text}
-                </p>
+                </Typography>
               </div>
             </Box>
           </Grid>
-          <Grid item lg={5} md={6} sm={6} xs={12}>
+          <Grid item lg={5} md={6} sm={12} xs={12}>
             <Box
               sx={{
                 display: "flex",
                 justifyContent: {
-                  xs: "center",
+                  xs: "flex-start",
                   md: "flex-start",
                   lg: "flex-start",
                   sm: "flex-start",
@@ -223,18 +224,18 @@ const WeDo = () => {
                     width: "100px",
                   }}
                 />{" "}
-                <p
-                  style={{
+                <Typography
+                  sx={{
+                    paddingLeft: { xs: 2 },
+                    textAlign: { xs: "left", lg: "left" },
                     fontSize: "24px",
                     fontWeight: "300",
                     fontFamily: "Poppins, sans-serif",
-                    // width: "120px",
-                    textAlign: "center",
                   }}
                 >
                   {" "}
-                  &nbsp; {images.image2.text}
-                </p>
+                  {images.image2.text}
+                </Typography>
               </div>
             </Box>
           </Grid>
@@ -244,7 +245,7 @@ const WeDo = () => {
         variant="h1"
         sx={{
           mb: 6,
-          mt: { lg: 20, md: 20, sm: 5, xs: 0 },
+          mt: { lg: 20, md: 20, sm: 7, xs: 7 },
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

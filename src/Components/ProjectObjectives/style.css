@@ -11,6 +11,12 @@
   font-weight: 700 !important;
 }
 .project_body {
-  margin-left: 7rem;
-  margin-right: 7rem;
+  /* margin-left: 7rem; */
+  /* margin-right: 7rem; */
+  font-family: "Poppins", sans-serif;
+}
+
+.projectObj_footer {
+  margin-bottom: 4rem;
+  margin-top: 1rem;
 }
